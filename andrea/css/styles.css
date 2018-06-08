@@ -24,3 +24,9 @@ aside {
     color: blueviolet;
     font-size: 50px;
 }
+.social a{
+    text-decoration: none;
+}
+.social i {
+    color: blue
+}
