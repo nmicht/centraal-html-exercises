@@ -10,12 +10,21 @@ body {
 }
 aside {
     background-color: blanchedalmond;
+    color: chocolate;
+    width: 20%;
+}
+aside img {
+    width: 80%;
+    margin: 0 auto;
 }
 .remark {
     background-color: darkgreen;
 }
 .main-titles {
     background-color: red;
+    padding: 60px 30px;
+    /*padding: 20px 30px 50px 30px;*/
+    text-align: center;
 }
 .main-titles h1 {
     color: darkslategrey;
