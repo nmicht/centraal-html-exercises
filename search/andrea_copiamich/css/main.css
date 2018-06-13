@@ -57,3 +57,25 @@ footer ul:last-of-type {
     background-color: blue;
     padding: 6px; 20 px;
 }
+.main-content {
+    width: 600px;
+    margin: 120px auto 0;
+    text-align: center;
+}
+.main-content img,
+.main-content input,
+.main-content p {
+    display: block;
+    margin: 20px auto;
+}
+.main-content button {
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.main-content img {
+    width: 400px;
+}
+.main-content input {
+    padding: 5px;
+    width: 100%;
+}
