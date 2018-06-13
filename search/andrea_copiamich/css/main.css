@@ -14,10 +14,11 @@ footer div{
     border: 1px solid grey;
     color: #666;
     padding: 10px;
+    overflow: auto;
 }
 footer li{
     display: inline-block;
-    margin: 10px;
+    margin-right: 10px;
 }
 footer a,
 footer a:link,
@@ -55,7 +56,8 @@ footer ul:last-of-type {
 .navTop button {
     color: white;
     background-color: blue;
-    padding: 6px; 20 px;
+    padding: 6px 20px;
+    border-radius: 5px;
 }
 .main-content {
     width: 600px;
@@ -78,4 +80,5 @@ footer ul:last-of-type {
 .main-content input {
     padding: 5px;
     width: 100%;
+    box-shadow: 10px 5px 20px 5px rgba(0,0,0,.1)
 }
