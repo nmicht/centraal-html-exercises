@@ -12,11 +12,19 @@ aside {
     background-color: blanchedalmond;
     color: chocolate;
     width: 20%;
+    float: left;
+    padding: 20px
 }
 aside img {
     width: 80%;
     margin: 0 auto;
     border-radius: 100%;
+}
+main {
+    float: right;
+    display: inline-block;
+    width: 75%;
+    padding: 10px
 }
 .remark {
     background-color: darkgreen;
