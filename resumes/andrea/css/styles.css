@@ -69,6 +69,9 @@ main {
     columns: 2;
     list-style-type: none;
 }
+.founder li::before {
+    content: url("https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/128x128/check.png")
+}
 footer {
     position: fixed;
     background-color: brown;
