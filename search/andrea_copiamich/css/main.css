@@ -9,6 +9,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 80px;
 }
 footer nav,
 footer div{
@@ -60,6 +61,10 @@ footer ul:last-of-type {
     padding: 6px 20px;
     border-radius: 5px;
 }
+main {
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+}
 .main-content {
     width: 600px;
     margin: 120px auto 0;
@@ -82,4 +87,29 @@ footer ul:last-of-type {
     padding: 5px;
     width: 100%;
     box-shadow: 10px 5px 20px 5px rgba(0,0,0,.1)
+}
+.results img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.results {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+   
+}
+.results article {
+    width: calc(1/4*100% - 30px);
+    margin: 15px;
+}
+@media (max-width: 767px) {
+    .results {
+        width: 100%;
+    }
+    .results article {
+        width: calc(1/2*100% - 30px);
+    }
 }
