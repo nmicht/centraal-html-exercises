@@ -1,25 +1,30 @@
+* {
+  box-sizing: border-box;
+}
 body{
-  font-size: 20px; /* todo lo de body tendra este tamaño */
   color: #343434; /* todo lo de body tendra este color */
   font-family: Helvetica, Arial, "Times New Roman"; /*todo lo de body tendra este tipo de letra */
-  width: 100%;
+  font-size: 20px; /* todo lo de body tendra este tamaño */
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 /* Degree es una nueva clase, empieza con . lo demás son las reglas que sigue la clase*/
 .degree{
   display: block; /* abarca toda la pantalla */
   font-weight: bold; /* hace que las letras sean negritas */
-  text-transform: uppercase; /* hace que todo este en mayúsculas */
   font-size: 15px;
+  text-transform: uppercase; /* hace que todo este en mayúsculas */
 }
 aside {
   background-color: #D9D9D9;
   font-size: "Times New Roman", Helvetica, Arial;
   font-size: 17px;
   color: #404040;
-  width: 20%;
+  width: calc(25% - 25px);
   float: left;
+  margin-right: 25px;
+  padding: 15px;
 }
 aside span,
 aside li,
@@ -27,7 +32,7 @@ aside h3 {
   padding-left: 15px
 }
 main {
-  width: 77%;
+  width: 75%;
   float: right;
   font-size: 20px;
 }
@@ -136,6 +141,7 @@ header h2 {
 }
 .container {
   margin-top: 49.800px;
+  overflow: auto;
 }
 footer span {
   float: left;
