@@ -2,25 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: yellow;
 }
+
+body {
+    background-color: lightcyan;
+}
+
 footer {
     background-color: lightgray;
-    bottom: 0;
-    color: #666;
     position: fixed;
-    width: 100%;
+    bottom: 0;
+    width: 100%;    
 }
+
 footer nav,
 footer div {
-    border: 1px solid grey;
+    border: 1px solid gray;
     padding: 10px 20px;
     overflow: auto;
 }
+
 footer li {
     display: inline-block;
     margin-right: 10px;
 }
+
 footer a,
 footer a:link,
 footer a:visited {
@@ -30,15 +36,19 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
+
 footer a:active {
     color: red;
 }
+
 footer ul:first-of-type {
     float: left;
 }
+
 footer ul:last-of-type {
     float: right;
 }
+
 .navTop {
     text-align: right;
     padding: 10px 20px 0 0;
@@ -47,36 +57,44 @@ footer ul:last-of-type {
     display: inline-block;
     margin-right: 10px;
 }
+
 .navTop a,
 .navTop a:link,
 .navTop a:visited {
     color: black;
     text-decoration: none;
 }
-.navTop a:hover {
+
+.navTop a:hover{
     text-decoration: underline;
 }
+
 .navTop button {
-    background-color: #4385f9;
-    color: #FFF;
+    color: white;
+    background-color: blue;
     padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
 }
+
 .mainContent {
     width: 600px;
-    margin: 200px auto;
+    margin: 150px auto;
     text-align: center;
 }
+
 .mainContent img,
 .mainContent input,
 .buttons {
     display: block;
     margin: 20px auto;
+    opacity: 0.5;
 }
 .mainContent input {
     width: 100%;
     padding: 5px;
-    box-shadow: -5px 5px 15px 1px gray;
+    box-shadow: 1px 1px 5px 5px grey;
 }
-.buttons button {
-    padding: 10px 20px;
+.buttons button{
+    padding: 7px 15px;
 }
