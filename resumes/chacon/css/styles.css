@@ -3,7 +3,7 @@
 }
 body{
   color: #343434;
-  font-family: Helvetica, Arial, "Times New Roman";
+  font-family:"Times New Roman", Helvetica, Arial,;
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -16,7 +16,6 @@ body{
 }
 aside {
   background-color: #D9D9D9;
-  font-size: "Times New Roman", Helvetica, Arial;
   font-size: 17px;
   color: #404040;
   width: calc(25% - 25px);
@@ -54,20 +53,15 @@ aside img {
 }
 .main-titles{
   background-color: #0E1939;
-  /*padding: 20px 0 20px 0;*/
-  /*padding: 20px 0 20px*/
   padding: 50px 0;
-  /*padding: 20px*/
   text-align: center;
 }
 .main-titles h1 {
   color: #FFF;
-  font-family: "Times New Roman";
   font-size: 35px;
 }
 .main-titles h2 {
   color: #F7F7F7;
-  font-family: "Times New Roman";
   font-size: 27px;
   border-top: 2px solid;
   display: inline-block;
@@ -76,10 +70,18 @@ aside img {
 }
 .about-me {
   background-color: #F7F7F7;
-  font-family: "Times New Roman", Helvetica, Arial;
   font-size: 20px;
   color: black;
   line-height: 25px;
+}
+.reference {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommendation_div,
+.reference figure {
+  width: calc(1/2*100% - 20px);
 }
 ul {
   list-style-type: none;
