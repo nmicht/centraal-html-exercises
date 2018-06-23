@@ -5,7 +5,7 @@
     text-align: center;
     border-radius: 5px;
     border: none;
-    
+
 }
 .tuesday thead {
     background-color: lightcyan;
@@ -14,6 +14,50 @@
 .tuesday th {
     background-color: lightcyan
 }
+.table_monday {
+  text-align: center;
+  border: none;
+  border-spacing: 5px;
+}
+.monday th {
+  background-color: #b7c3d0;
+}
+.monday .hour {
+  font-weight: normal;
+}
+.monday th,
+.monday td {
+  border-radius: 5px;
+  border: none;
+}
+.monday .registry_recess_coctel {
+  background-color: #9999cc;
+}
+.monday .bold {
+  font-weight: bold;
+}
+.monday .i {
+  font-style: italic;
+}
+.monday .exi {
+  font-style: oblique;
+}
+.monday .inaguration {
+  background-color: #c0c0c0;
+}
+.monday .conference {
+  background-color: #e6e6ff;
+}
+.monday .workshop {
+  background-color: #9999ff;
+}
+.monday .informal {
+  background-color: #ccccff;
+}
+.monday .tutorial {
+  background-color: #9cf;
+}
+
 .wednesday {
     background-color: aliceblue;
     border-collapse: separate;
@@ -24,7 +68,7 @@
 
 }
 .wednesday th {
-    background-color: lightblue;    
+    background-color: lightblue;
 }
 .wednesday tbody {
     background-color: lightgoldenrodyellow;
@@ -57,5 +101,3 @@
 .wednesday .salmon {
     background-color: lightsalmon;
 }
-
-
