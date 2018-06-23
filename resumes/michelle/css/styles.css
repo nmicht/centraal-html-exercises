@@ -25,6 +25,7 @@ main {
 }
 aside img {
     border-radius: 100%;
+    width: 100%;
 }
 .social a{
     color: white;
@@ -116,4 +117,29 @@ footer a {
     border-radius: 20px;
     margin: 20px;
     width: calc(1/2*100% - 40px);
+}
+@media (max-width: 767px) {
+    header {
+        display: none;
+    }
+    .container {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    aside {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 20%;
+    }
+    main {
+        width: 100%;
+    }
+    .content {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 630px) {
+    .item {
+        width: calc(100% - 40px);
+    }
 }
