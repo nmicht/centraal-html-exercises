@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-size: 20px;
     color: #4A4B4C;
@@ -5,17 +8,20 @@ body {
     margin: 0;
     padding: 0;
 }
+.container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+}
 aside {
-    width: 38%;
+    width: calc(40% - 20px);
     background-color: #949699;
     color: #C5C8C9;
     padding: 15px;
-    float: left;
-    margin-right: 1.5%
+    margin-right: 20px;
 }
 main {
-    width: 58%;
-    float: left;
+    width: 60%;
 }
 aside img {
     border-radius: 100%;
@@ -72,16 +78,12 @@ header h1,
 header h2 {
     margin: 0;
 }
-.container {
-    margin-top: 50px;
-}
 footer {
     background-color: #BFC8D4;
     bottom: 0;
     font-size: 15px;
     left: 0;
     max-height: 20px;
-    overflow: auto;
     position: fixed;
     padding: 5px;
     right: 0;
@@ -96,4 +98,17 @@ footer a {
 }
 .bonito li:nth-child(even) {
     color: yellow;
+}
+.references img {
+    width: 100px;
+}
+.references span {
+    display: block;
+}
+.references {
+    text-align: center;
+}
+.item {
+    border: 0.5px solid gray;
+    border-radius: 20px;
 }
