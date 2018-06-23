@@ -1,34 +1,35 @@
+* {
+  box-sizing: border-box;
+}
 body{
-  font-size: 20px; /* todo lo de body tendra este tamaño */
-  color: #343434; /* todo lo de body tendra este color */
-  font-family: Helvetica, Arial, "Times New Roman"; /*todo lo de body tendra este tipo de letra */
-  width: 100%;
+  color: #343434;
+  font-family:"Times New Roman", Helvetica, Arial,;
+  font-size: 20px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-/* Degree es una nueva clase, empieza con . lo demás son las reglas que sigue la clase*/
-.degree{
-  display: block; /* abarca toda la pantalla */
-  font-weight: bold; /* hace que las letras sean negritas */
-  text-transform: uppercase; /* hace que todo este en mayúsculas */
-  font-size: 15px;
+.container {
+  margin-top: 49.8px;
+  display: flex;
+  margin-bottom: 20px;
 }
 aside {
   background-color: #D9D9D9;
-  font-size: "Times New Roman", Helvetica, Arial;
   font-size: 17px;
   color: #404040;
-  width: 20%;
-  float: left;
+  width: calc(25% - 25px);
+  margin-right: 25px;
+  padding: 15px;
 }
-aside span,
-aside li,
-aside h3 {
-  padding-left: 15px
+.degree{
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 main {
-  width: 77%;
-  float: right;
+  width: 75%;
   font-size: 20px;
 }
 aside img {
@@ -47,20 +48,15 @@ aside img {
 }
 .main-titles{
   background-color: #0E1939;
-  /*padding: 20px 0 20px 0;*/
-  /*padding: 20px 0 20px*/
   padding: 50px 0;
-  /*padding: 20px*/
   text-align: center;
 }
 .main-titles h1 {
   color: #FFF;
-  font-family: "Times New Roman";
   font-size: 35px;
 }
 .main-titles h2 {
   color: #F7F7F7;
-  font-family: "Times New Roman";
   font-size: 27px;
   border-top: 2px solid;
   display: inline-block;
@@ -69,10 +65,18 @@ aside img {
 }
 .about-me {
   background-color: #F7F7F7;
-  font-family: "Times New Roman", Helvetica, Arial;
   font-size: 20px;
   color: black;
   line-height: 25px;
+}
+.reference {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommendation_div,
+.reference figure {
+  width: calc(1/2*100% - 20px);
 }
 ul {
   list-style-type: none;
@@ -134,9 +138,6 @@ header h1,
 header h2 {
   margin: 3px;
 }
-.container {
-  margin-top: 49.800px;
-}
 footer span {
   float: left;
 }
@@ -157,11 +158,45 @@ footer {
   color: white;
   padding: 5px;
   font-style: italic;
-  overflow: auto;
   opacity: .7;
 }
 .numbers li::before {
   content: ;
   padding-right: 5px;
   vertical-align: ;
+}
+@media (max-width: 767px) {
+  header {
+    display: none;
+  }
+  .container {
+    margin-top: 0;
+  }
+  aside {
+    width: 100%;
+    margin-right: 0;
+    padding: 3% 20%;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  aside img {
+    width: 120%;
+  }
+  main {
+    width: 100%;
+  }
+  .main-titles {
+    position: relative;
+    width: 100%;
+  }
+  .content {
+    margin: 0 5%;
+  }
+}
+@media (max-width: 630px) {
+  .recommendation_div,
+  .reference figure {
+    width: calc(100% - 20px);
+  }
 }

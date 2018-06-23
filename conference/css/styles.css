@@ -1,0 +1,61 @@
+.tuesday {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: dimgray;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    
+}
+.tuesday thead {
+    background-color: lightcyan;
+    border: none;
+}
+.tuesday th {
+    background-color: lightcyan
+}
+.wednesday {
+    background-color: aliceblue;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+    font-family: Helvetica, Arial, "Times New Roman";
+    width: 100%
+
+}
+.wednesday th {
+    background-color: lightblue;    
+}
+.wednesday tbody {
+    background-color: lightgoldenrodyellow;
+}
+
+.wednesday .empty {
+    background-color: aliceblue;
+}
+
+.wednesday .pink {
+    background-color: lightpink;
+}
+
+.wednesday .grey {
+    background-color: lightgray;
+}
+
+.wednesday .coral {
+    background-color: lightcoral;
+}
+
+.wednesday .green {
+    background-color: lightgreen;
+}
+
+.wednesday .blue {
+    background-color: lightseagreen;
+}
+
+.wednesday .salmon {
+    background-color: lightsalmon;
+}
+
+
