@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 footer {
+  height: 80px;
     background-color: lightgray;
     bottom: 0;
     color: #666;
