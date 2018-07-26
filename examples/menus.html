@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Menus</title>
+        <style media="screen">
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style-type: none;
+            }
+            li {
+                margin: 15px 10px;
+                width: 140px;
+            }
+            li a {
+                border: 1px solid grey;
+                padding: 10px 15px;
+                text-decoration: none;
+            }
+            .menu {
+                display: flex;
+            }
+            .submenu,
+            .sub-submenu {
+                display: none;
+            }
+            .sub-submenu {
+                margin-left: 120px;
+                margin-top: -20px;
+            }
+            .menu li:hover .submenu {
+                display: block;
+            }
+            .submenu li:hover .sub-submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a>
+                <ul class="submenu">
+                    <li><a href="#">Suboption 1</a></li>
+                    <li><a href="#">Suboption 2</a></li>
+                    <li><a href="#">Suboption 3</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">Suboption 1</a></li>
+                            <li><a href="#">Suboption 2</a></li>
+                            <li><a href="#">Suboption 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Option 3</a>
+                <ul class="submenu">
+                    <li><a href="#">Suboption 1</a></li>
+                    <li><a href="#">Suboption 2</a></li>
+                    <li><a href="#">Suboption 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
