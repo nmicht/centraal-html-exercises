@@ -17,6 +17,9 @@
                 height: var(--header-size);
                 top: 0;
             }
+            nav button {
+                display: none;
+            }
             nav ul {
                 list-style-type: none;
             }
@@ -75,11 +78,27 @@
                     width: 100%;
                 }
             }
+            @media (max-width: 600px) {
+                nav button {
+                    display: inline-block;
+                }
+                nav ul.menu{
+                    display: none;
+                }
+                nav .menu.active {
+                    display: block;
+                }
+                nav li {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
         </style>
     </head>
     <body>
         <header>
             <nav>
+                <button type="button">=</button>
                 <ul class="menu">
                     <li><a href="#">Option 1</a></li>
                     <li><a href="#">Option 2</a>
@@ -127,5 +146,12 @@
                 </div>
             </section>
         </div>
+        <script type="text/javascript">
+            let buttonNode = document.querySelector('header nav button');
+            let menuNode = document.querySelector('header nav .menu');
+            buttonNode.addEventListener('click', function(){
+                menuNode.classList.add('active');
+            })
+        </script>
     </body>
 </html>
